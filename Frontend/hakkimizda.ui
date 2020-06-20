@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Hakkimizda</class>
+ <widget class="QDialog" name="Hakkimizda">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>190</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hakkımızda</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../materials.qrc">
+    <normaloff>:/icons/Icons/meeting_workspace.png</normaloff>:/icons/Icons/meeting_workspace.png</iconset>
+  </property>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>541</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="undoRedoEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="plainText">
+    <string>Y &amp; F Perakende Satış Uzmanlığı 2014 senesinde Yunus Emre SÖĞÜT ve Hiznullah &quot;Furkan&quot; TUYLU  tarafından Trabzonda kurulmuştur.
+
+Asıl amaçları insanların hayatlarını kolaylaştıracak yazılımlar oluşturmaktır.
+
+Bu konudaki gelişmişliklerinin en büyük ve önemli ismi olan Tolga BERBER'e teşekkürlerimizi borç biliriz.
+
+                                              Y &amp; F Satış Uzmanlığı Tüm hakları saklıdır. ©</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../materials.qrc"/>
+ </resources>
+ <connections/>
+</ui>

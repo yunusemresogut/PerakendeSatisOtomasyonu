@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Icons/cart_add.png</file>
+        <file>Icons/lorry_add.png</file>
+        <file>Icons/Ok.png</file>
+        <file>Icons/No.png</file>
+        <file>Icons/ssl_tls_manager.png</file>
+        <file>Icons/receipt_invoice.png</file>
+        <file>Icons/trash-empty.png</file>
+        <file>Icons/shop.png</file>
+        <file>Icons/search_accounts.png</file>
+        <file>Icons/folder_search.png</file>
+        <file>Icons/Search text.png</file>
+        <file>Icons/google_custom_search.png</file>
+        <file>Icons/Help(1).png</file>
+        <file>Icons/meeting_workspace.png</file>
+    </qresource>
+</RCC>

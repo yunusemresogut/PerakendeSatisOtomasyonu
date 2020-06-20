@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Yardim</class>
+ <widget class="QDialog" name="Yardim">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>330</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Yardım</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../materials.qrc">
+    <normaloff>:/icons/Icons/Help(1).png</normaloff>:/icons/Icons/Help(1).png</iconset>
+  </property>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>291</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="plainText">
+    <string>Y &amp; F Perakende Satış Otomasyonuna Hoşgeldiniz
+
+'Üst Menü' den çok basit ve pratik bir şekilde dilediğiniz gibi işlemlerinizi gerçekleştirebilirsiniz.
+
+Kısayollar
+Ctrl+Q = Ürün Ekleme
+Ctrl+A = Ürün Arama
+Ctrl+W = Stok Ekleme
+Ctrl+S = Stok Arama
+Ctrl+E = Müşteri Ekleme
+Ctrl+D = Müşteri Arama
+Ctrl+R = Fatura Ekleme
+Ctrl+F = Fatura Arama
+Ctrl+T = Yardım
+Ctrl+Y = Hakkımızda</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../materials.qrc"/>
+ </resources>
+ <connections/>
+</ui>

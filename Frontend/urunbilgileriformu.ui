@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UrunBilgileriFormu</class>
+ <widget class="QDialog" name="UrunBilgileriFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Stok Bilgileri</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../materials.qrc">
+    <normaloff>:/icons/Icons/cart_add.png</normaloff>:/icons/Icons/cart_add.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel {
+	
+	font: 10pt &quot;Calibri&quot;;
+}
+QDateEdit {
+qproperty-displayFormat: &quot;dd.MM.yyyy&quot;;
+qproperty-calendarPopup: true;
+}
+QPushButton#pb_Kaydet{
+qproperty-text: &quot;Kaydet&quot;;
+qproperty-default: true;
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>311</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="lbl_Adi">
+      <property name="text">
+       <string>Adı:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="le_Adi"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lbl_Kodu">
+      <property name="text">
+       <string>Kodu:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="le_Kodu"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lbl_Adeti">
+      <property name="text">
+       <string>Adeti:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="le_Adeti"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="lbl_Fiyati">
+      <property name="text">
+       <string>Grubu</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="le_Fiyati"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="lbl_Tarihi">
+      <property name="text">
+       <string>Tarihi:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QDateEdit" name="de_Tarihi"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>340</y>
+     <width>278</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pb_TTemizle">
+      <property name="text">
+       <string>Tümünü Temizle</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../materials.qrc">
+        <normaloff>:/icons/Icons/trash-empty.png</normaloff>:/icons/Icons/trash-empty.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pb_Kaydet">
+      <property name="text">
+       <string>Kaydet</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../materials.qrc">
+        <normaloff>:/icons/Icons/Ok.png</normaloff>:/icons/Icons/Ok.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pb_Cikis">
+      <property name="text">
+       <string>Çıkış</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../materials.qrc">
+        <normaloff>:/icons/Icons/No.png</normaloff>:/icons/Icons/No.png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>110</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../materials.qrc">:/icons/Icons/lorry_add.png</pixmap>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Stok Bilgileri</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../materials.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pb_Kaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>UrunBilgileriFormu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>214</x>
+     <y>309</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>173</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_Cikis</sender>
+   <signal>clicked()</signal>
+   <receiver>UrunBilgileriFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>304</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>le_Adi</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>UrunBilgileriFormu</receiver>
+   <slot>degisiklikyapildi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>149</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>67</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>le_Kodu</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>UrunBilgileriFormu</receiver>
+   <slot>degisiklikyapildi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>255</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>80</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>le_Adeti</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>UrunBilgileriFormu</receiver>
+   <slot>degisiklikyapildi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>184</x>
+     <y>158</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>92</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>le_Fiyati</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>UrunBilgileriFormu</receiver>
+   <slot>degisiklikyapildi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>198</x>
+     <y>206</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>50</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>de_Tarihi</sender>
+   <signal>dateChanged(QDate)</signal>
+   <receiver>UrunBilgileriFormu</receiver>
+   <slot>degisiklikyapildi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>60</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>degisiklikyapildi()</slot>
+ </slots>
+</ui>

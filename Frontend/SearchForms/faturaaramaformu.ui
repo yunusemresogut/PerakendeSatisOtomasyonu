@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FaturaAramaFormu</class>
+ <widget class="QDialog" name="FaturaAramaFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Fatura Arama</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../materials.qrc">
+    <normaloff>:/icons/Icons/Search text.png</normaloff>:/icons/Icons/Search text.png</iconset>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>320</y>
+     <width>511</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Fatura No</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Geçerlilik Süresi</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Fatura Tarihi</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sil</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Düzenle</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="pb_Cikis">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>490</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Çıkış</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../materials.qrc">
+     <normaloff>:/icons/Icons/No.png</normaloff>:/icons/Icons/No.png</iconset>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>721</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Geçerlilik Süresine Göre Arama</string>
+    </attribute>
+    <widget class="QLineEdit" name="le_AramaYeriF">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>291</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>10</y>
+       <width>201</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Arama Seçenekleri</string>
+     </property>
+     <widget class="QPushButton" name="pb_AraF">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>80</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ara</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../materials.qrc">
+        <normaloff>:/icons/Icons/google_custom_search.png</normaloff>:/icons/Icons/google_custom_search.png</iconset>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>91</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="rb_IleBaslayanF">
+         <property name="text">
+          <string>İle Başlayan</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="rb_IleBitenF">
+         <property name="text">
+          <string>İle Biten</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QRadioButton" name="rb_IcerenF">
+         <property name="text">
+          <string>İçeren</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="cb_YazarkenAraF">
+         <property name="text">
+          <string>Yazarken Ara</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="lbl_AramaF">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Aramak istediğiniz değeri yazın.</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../materials.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pb_Cikis</sender>
+   <signal>clicked()</signal>
+   <receiver>FaturaAramaFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>734</x>
+     <y>551</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>604</x>
+     <y>542</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

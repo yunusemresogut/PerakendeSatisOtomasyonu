@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>YF_PerakendeSatisOtomasyonu</class>
+ <widget class="QMainWindow" name="YF_PerakendeSatisOtomasyonu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Y &amp; F Perakende Satış</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="materials.qrc">
+    <normaloff>:/icons/Icons/shop.png</normaloff>:/icons/Icons/shop.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QCommandLinkButton" name="commandLinkButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>180</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>www.yfsatisuzmanligi.com</string>
+    </property>
+    <property name="description">
+     <string>https://www.yfsatisuzmanligi.com/</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>160</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y &amp; F Perakende Satış Uzmanlığı</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_r_n_Bilgileri">
+    <property name="title">
+     <string>Stok Bilgileri</string>
+    </property>
+    <addaction name="action_r_n_Bilgilerini_G_ncelle"/>
+   </widget>
+   <widget class="QMenu" name="menuStok_Bilgileri">
+    <property name="title">
+     <string>Ürün Bilgileri</string>
+    </property>
+    <addaction name="actionStok_Ekle"/>
+    <addaction name="actionStok_Arama"/>
+   </widget>
+   <widget class="QMenu" name="menuM_teri_Bilgileri">
+    <property name="title">
+     <string>Müşteri Bilgileri</string>
+    </property>
+    <addaction name="actionM_steri_Ekle"/>
+    <addaction name="actionM_steri_Arama"/>
+   </widget>
+   <widget class="QMenu" name="menuFatura_Bilgileri">
+    <property name="title">
+     <string>Fatura Bilgileri</string>
+    </property>
+    <addaction name="actionFatura_Ekle"/>
+    <addaction name="actionFatura_Arama"/>
+   </widget>
+   <addaction name="menu_r_n_Bilgileri"/>
+   <addaction name="menuStok_Bilgileri"/>
+   <addaction name="menuM_teri_Bilgileri"/>
+   <addaction name="menuFatura_Bilgileri"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_r_n_Bilgilerini_G_ncelle"/>
+   <addaction name="actionStok_Ekle"/>
+   <addaction name="actionM_steri_Ekle"/>
+   <addaction name="actionFatura_Ekle"/>
+   <addaction name="actionYard_m"/>
+   <addaction name="actionHakk_m_zda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_r_n_Bilgilerini_G_ncelle">
+   <property name="icon">
+    <iconset resource="materials.qrc">
+     <normaloff>:/icons/Icons/lorry_add.png</normaloff>:/icons/Icons/lorry_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stok Bilgileri</string>
+   </property>
+   <property name="toolTip">
+    <string>Stok bilgilerini güncellemek için kullanılır.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionStok_Ekle">
+   <property name="icon">
+    <iconset resource="materials.qrc">
+     <normaloff>:/icons/Icons/cart_add.png</normaloff>:/icons/Icons/cart_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ürün Ekle</string>
+   </property>
+   <property name="toolTip">
+    <string>Ürün eklemek için kullanacağınız menüdür.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionStok_Arama">
+   <property name="icon">
+    <iconset resource="materials.qrc">
+     <normaloff>:/icons/Icons/google_custom_search.png</normaloff>:/icons/Icons/google_custom_search.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ürün Arama</string>
+   </property>
+   <property name="toolTip">
+    <string>Ürün aramak için kullanacağınız menüdür.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionM_steri_Ekle">
+   <property name="icon">
+    <iconset resource="materials.qrc">
+     <normaloff>:/icons/Icons/ssl_tls_manager.png</normaloff>:/icons/Icons/ssl_tls_manager.png</iconset>
+   </property>
+   <property name="text">
+    <string>Müsteri Ekle</string>
+   </property>
+   <property name="toolTip">
+    <string>Müşteri eklemek için kullanacağınız menüdür.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionM_steri_Arama">
+   <property name="icon">
+    <iconset resource="materials.qrc">
+     <normaloff>:/icons/Icons/search_accounts.png</normaloff>:/icons/Icons/search_accounts.png</iconset>
+   </property>
+   <property name="text">
+    <string>Müsteri Arama</string>
+   </property>
+   <property name="toolTip">
+    <string>Müşteri aramak için kullanacağınız menüdür.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionFatura_Ekle">
+   <property name="icon">
+    <iconset resource="materials.qrc">
+     <normaloff>:/icons/Icons/receipt_invoice.png</normaloff>:/icons/Icons/receipt_invoice.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fatura Ekle</string>
+   </property>
+   <property name="toolTip">
+    <string>Fatura eklemek için kullanacağınız menüdür.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionFatura_Arama">
+   <property name="icon">
+    <iconset resource="materials.qrc">
+     <normaloff>:/icons/Icons/Search text.png</normaloff>:/icons/Icons/Search text.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fatura Arama</string>
+   </property>
+   <property name="toolTip">
+    <string>Fatura aramak için kullanacağınız menüdür.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionHakk_m_zda">
+   <property name="icon">
+    <iconset resource="materials.qrc">
+     <normaloff>:/icons/Icons/meeting_workspace.png</normaloff>:/icons/Icons/meeting_workspace.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hakkımızda</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionYard_m">
+   <property name="icon">
+    <iconset resource="materials.qrc">
+     <normaloff>:/icons/Icons/Help(1).png</normaloff>:/icons/Icons/Help(1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Yardım</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="materials.qrc"/>
+ </resources>
+ <connections/>
+</ui>
